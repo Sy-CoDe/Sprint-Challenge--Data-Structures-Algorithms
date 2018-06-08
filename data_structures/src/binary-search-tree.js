@@ -1,3 +1,5 @@
+const Queue = require("./queue");
+
 class BinarySearchTree {
   constructor(value) {
     this.value = value;
@@ -6,12 +8,16 @@ class BinarySearchTree {
   }
 
   depthFirstForEach(cb) {
-    /* Your code here */
-    
+    cb(this.value);
+    if (this.left) {
+      this.left.depthFirstForEach(cb);
+    }
+    if (this.right) {
+      this.right.depthFirstForEach(cb);
+    }
   }
 
   breadthFirstForEach(cb) {
-    /* Your code here */
 
   }
 
