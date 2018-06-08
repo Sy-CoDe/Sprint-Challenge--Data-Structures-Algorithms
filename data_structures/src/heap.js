@@ -1,9 +1,8 @@
 const heapsort = arr => {
-  let hArr = arr;
-  hArr.sort((item1, item2) => {
+  arr.sort((item1, item2) => {
     return item1 - item2;
   });
-  return hArr;
+  return arr;
 };
 
 class Heap {
