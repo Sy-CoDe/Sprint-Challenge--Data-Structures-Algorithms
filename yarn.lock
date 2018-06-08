@@ -1163,7 +1163,7 @@ inflight@^1.0.4:
     once "^1.3.0"
     wrappy "1"
 
-inherits@2, inherits@~2.0.3:
+inherits@2, inherits@~2.0.0, inherits@~2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.3.tgz#633c2c83e3da42a502f52466022480f4208261de"
 
@@ -2379,6 +2379,12 @@ punycode@^2.1.0:
 qs@~6.5.1:
   version "6.5.2"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
+
+queue@^4.4.2:
+  version "4.4.2"
+  resolved "https://registry.yarnpkg.com/queue/-/queue-4.4.2.tgz#5a9733d9a8b8bd1b36e934bc9c55ab89b28e29c7"
+  dependencies:
+    inherits "~2.0.0"
 
 randomatic@^3.0.0:
   version "3.0.0"
