@@ -18,7 +18,14 @@ class BinarySearchTree {
   }
 
   breadthFirstForEach(cb) {
-
+    const q = new Queue();
+    q.enqueue(this);
+    while (!q.isEmpty()) {
+      const node = q.dequeue();
+      if (node.left) q.enqueue(node.left);
+      if (node.right) q.enqueue(node.right);
+      cb(node.value);
+    }
   }
 
   insert(value) {
